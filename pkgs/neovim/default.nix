@@ -1,4 +1,4 @@
-{pkgs, lib}:
+{lib, config, pkgs}:
 pkgs.stdenv.mkDerivation rec {
   name = "nvim-linux-x86_64";
   version = "v0.11.4";

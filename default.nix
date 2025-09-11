@@ -1,4 +1,4 @@
-{ pkgs ? import <nixos-unstable> {}, lib }:
+{ lib, config, pkgs ? import <nixos-unstable> {} }:
 {
   neovim = (import ./pkgs/neovim); 
 }
