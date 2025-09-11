@@ -8,8 +8,7 @@ stdenv.mkDerivation rec {
   version = "nightly";
   src = fetchzip {
     url = "https://github.com/neovim/neovim/releases/download/${version}/${name}.tar.gz";
-    sha256 = "b52106a73c15c2b9ae3ec0de2a32ff7f1e3c2991af21243e7a3935e5907dd7f7";
-    # sha256 = "IDOEnV4oLHptb0DJ0uTsV9l0JJMzccQpvS4MYlBSeKk=";
+    sha256 = "hdaBbZXcotEykZ3NvgTuUHmtf61fdMf69NGSNjUBZ54=";
   };
   installPhase = ''
     cp -r $src/. $out
