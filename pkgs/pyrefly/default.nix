@@ -8,7 +8,7 @@ with pkgs.python314Packages;
 buildPythonPackage rec {
   pname = "pyrefly";
   version = "0.41.3";
-  # pyproject = true;
+  pyproject = true;
   src = fetchPypi {
     inherit pname version;
     format = "wheel";
@@ -20,6 +20,6 @@ buildPythonPackage rec {
     homepage = "https://github.com/facebook/pyrefly";
   };
   build-system = [
-    pythonPackages.setuptools
+    setuptools
   ];
 }
