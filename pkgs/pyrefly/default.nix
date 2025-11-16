@@ -2,7 +2,7 @@
   buildPythonPackage,
   fetchPypi,
   lib
-} @ args:
+}:
 buildPythonPackage rec {
   pname = "pyrefly";
   version = "0.41.3";
