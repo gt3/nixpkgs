@@ -17,7 +17,7 @@ buildPythonPackage rec {
   hash = "f2/8c/80d6b32758f2f15cf59b148b469a889c557e13cde8042e38bb8fe4c211da";
   url = "https://files.pythonhosted.org/packages/${hash}/${pname}-${version}-${python}-${abi}-${platform}.whl";
   src = fetchurl {
-    inherit url sha256
+    inherit url sha256;
   };
   doCheck = false;
   meta = with lib; {
