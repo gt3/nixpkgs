@@ -6,6 +6,7 @@
 buildPythonPackage rec {
   pname = "pyrefly";
   version = "0.41.3";
+  # pyproject = true;
   src = fetchPypi {
     inherit pname version;
     format = "wheel";
@@ -16,4 +17,7 @@ buildPythonPackage rec {
     description = "Pyrefly latest";
     homepage = "https://github.com/facebook/pyrefly";
   };
+  build-system = [
+    pythonPackages.setuptools
+  ];
 }
