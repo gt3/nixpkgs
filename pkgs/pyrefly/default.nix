@@ -1,9 +1,9 @@
 {
-  pythonPackages,
-  buildPythonPackage,
   fetchPypi,
   lib
 }:
+with pkgs.python314Packages;
+
 buildPythonPackage rec {
   pname = "pyrefly";
   version = "0.41.3";
