@@ -10,7 +10,7 @@ buildPythonPackage rec {
   version = "0.41.3";
   # pyproject = true;
   format = "wheel";
-  dist = "py3";
+  python = "py3";
   platform = "manylinux_2_17_x86_64.manylinux2014_x86_64";
   src = fetchPypi {
     inherit pname version format dist platform;
