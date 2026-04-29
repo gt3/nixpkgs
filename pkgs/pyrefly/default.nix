@@ -13,7 +13,6 @@ buildPythonPackage rec {
   python = "py3";
   abi = "none";
   platform = "manylinux_2_17_x86_64.manylinux2014_x86_64";
-  sha256 = "a+tB9gJQNsCY/QqYu5099gK5c1Mv5NGkE7Xb8Kb/DoM=";
   sha256 = "d53ec1f8711b24b1e992309b978b219daf2335201f26acafa86f14fbb81804ec";
   hash = "15/d5/f0c9e6938c3f1231405ee77045b2b51c349d1a6aa84ba8717f4829f64bbc";
   url = "https://files.pythonhosted.org/packages/${hash}/${pname}-${version}-${python}-${abi}-${platform}.whl";
